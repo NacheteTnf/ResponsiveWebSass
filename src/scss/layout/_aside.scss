@@ -1,0 +1,33 @@
+@import "../base/mixin";
+
+aside {
+  @include tablet {
+    display: flex;
+    gap: 2rem;
+  }
+  @include desktop {
+    grid-area: aside;
+  }
+  .about-me {
+    margin: 1.5rem 0 3rem 0;
+    @include tablet {
+      flex: 0 1 50%
+    }
+
+  }
+
+  .my-likes {
+    margin: 1.5rem 0 3rem 0;
+    @include tablet {
+      flex: 0 1 50%;
+    }
+
+    h3 {
+      @include tablet {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+}
+

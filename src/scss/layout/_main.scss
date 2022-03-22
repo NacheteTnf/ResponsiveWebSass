@@ -1,0 +1,38 @@
+@import "../base/mixin";
+
+main {
+  @include desktop {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+  }
+}
+
+section {
+  margin: 2rem 0;
+  .section-header {
+    p {
+      color: $grey;
+      font-style: italic;
+    }
+  }
+
+  .section-info {
+    @include tablet {
+      display:flex;
+      gap: 2rem;
+    }
+    .image-card {
+      @include tablet {
+        flex: 0 1 40%;
+      }
+    }
+
+    p {
+      flex: 0 1 60%;
+      text-align: justify;
+    }
+  }
+}

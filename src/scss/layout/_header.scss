@@ -1,0 +1,60 @@
+@import "../base/mixin";
+
+header {
+  align-items: center;
+  background-color: $green;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+
+  @include desktop {
+    grid-area: header;
+  }
+}
+
+nav {
+
+  background-color:$dark;
+
+  @include desktop {
+    grid-area: nav;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  li { 
+    padding:1rem;
+  }
+  a {
+    color: $white;
+  }
+
+  @include tablet {
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0
+    }
+    li {
+      padding:1rem 0
+    }
+  }
+
+  @include desktop {
+    ul {
+      flex-direction: row;
+      justify-content: start;
+      gap: 1rem;
+      padding: 0
+    }
+    li {
+      padding:1rem 0
+    }
+  }
+}

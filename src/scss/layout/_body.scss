@@ -1,0 +1,13 @@
+@import "../base/mixin";
+
+body {
+  @include desktop {
+    display: grid;
+    grid-template-areas:"header header header header header"
+                        "nav nav nav nav nav"
+                        "aside main main main main"
+                        "aside main main main main"
+                        "footer footer footer footer footer";  
+  }
+
+}

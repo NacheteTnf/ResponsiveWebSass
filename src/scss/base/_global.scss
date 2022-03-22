@@ -1,0 +1,40 @@
+@import "./mixin";
+
+html {
+  font-size:62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size:1.6rem
+}
+
+a {
+  text-decoration:none
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size:3rem
+}
+
+.padding-container {
+  padding:1.5rem 1rem
+}
+
+.image {
+  @include zone-img
+}

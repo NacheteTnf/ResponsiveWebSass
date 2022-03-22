@@ -1,0 +1,10 @@
+footer {
+  align-items: center;
+  background-color: $grey;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  @include desktop {
+    grid-area: footer;
+  }
+}
